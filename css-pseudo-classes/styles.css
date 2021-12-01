@@ -1,0 +1,22 @@
+button {
+  width: 125px;
+  height: 35px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+tbody {
+  background-color: #d2d2d2;
+}
+
+thead {
+  background-color: black;
+  color: white;
+}
+
+tr:nth-child(2n) {
+  background-color: white;
+}
