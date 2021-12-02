@@ -1,0 +1,12 @@
+h3 {
+  color: #ed6964;
+  font-family: 'Brandon Grotesque', sans-serif;
+  letter-spacing: 1.6px;
+  text-align: center;
+}
+
+label {
+  color: #2b2b2b;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: bold;
+}
