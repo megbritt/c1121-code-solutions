@@ -1,12 +1,53 @@
-h3 {
-  color: #ed6964;
+div {
+  color: #2b2b2b;
+  font-weight: 600;
+}
+
+h2 {
+  color: #ec5d57;
   font-family: 'Brandon Grotesque', sans-serif;
-  letter-spacing: 1.6px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: auto;
   text-align: center;
+  width: 50%;
+}
+
+.nonbutton {
+  border-radius: 58% gray;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-size: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+  min-width: 500px;
+  min-height: 45px;
+}
+
+input::placeholder {
+  padding-left: 10px;
 }
 
 label {
-  color: #2b2b2b;
+  font-family: 'Brandon Grotesque', sans-serif;
+  padding: 10px;
+  padding-bottom: 5px;
+}
+
+.button {
+  background-color: #ec5d57;
+  border: none;
+  border-radius: 20px;
+  color: #fffcfc;
   font-family: 'Brandon Grotesque', sans-serif;
   font-weight: bold;
+  padding: 5px 19px;
+}
+
+.row {
+  margin: auto;
+  width: 50%;
+}
+
+.submit {
+  text-align: right;
 }

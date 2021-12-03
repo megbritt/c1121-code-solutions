@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CSS Challenge - Brochure Form</title>
-    <link rel="stylesheet" href="fonts.css" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
+    <title>CSS Brochure</title>
   </head>
   <body>
-    <h3>LEARN MORE</h3>
+    <h2>LEARN MORE</h2>
 
-    <div>
-      <label>COMPANY EMAIL</label>
-      <! --- fgh --->
-    </div>
+    <div class="row">
+      <div><label for="email">COMPANY EMAIL</label></div>
+      <input type="text" class="nonbutton" name="email" placeholder="sally@company.co">
 
-    <div>
-      <label>NAME</label>
-    </div>
+      <div><label for="name">NAME</label></div>
+      <input type="text" class="nonbutton" name="name" placeholder="Sally Smith">
 
-    <div>
-      <label>WHERE ARE YOU HIRING?</label>
-    </div>
+      <div><label for="location">WHERE ARE YOU HIRING?</label></div>
+      <input type="text" class="nonbutton"  name="location" placeholder="City, Country">
 
-    <div>
-      <label>HOW MANY ENGINEERS ARE YOU HIRING IN THE NEXT 6 MONTHS?</label>
-    </div>
+      <div><label for="number">HOW MANY ENGINEERS ARE YOU HIRING IN THE NEXT 6 MONTHS? </label></div>
+      <select name="numbers">
+        <option value="">1-2 Engineers</option>
+      </select>
+
+      <div class="submit">
+        <!-- <button>Submit</button> -->
+          <input type="submit" name="submit" value="SUBMIT" class="button" />
+        </div>
+      </div>
+
   </body>
 </html>
