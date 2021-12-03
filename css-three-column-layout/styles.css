@@ -1,0 +1,48 @@
+#container {
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+#webpage {
+  background-color: #1996da;
+}
+
+.column1,
+.column2,
+.column3 {
+  width: 235px;
+  margin: 50px;
+  text-align: center;
+}
+
+.dot {
+  height: 200px;
+  width: 200px;
+  background-color: #ffff;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 1px #ddd;
+}
+
+h1,
+h2 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+img {
+  max-width: 116px;
+  position: relative;
+  top: 200px;
+  padding-bottom: 30px;
+}
+
+span {
+  color: #ddd;
+  font-family: 'Lato', sans-serif;
+}
