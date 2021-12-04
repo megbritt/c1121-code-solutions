@@ -2,11 +2,30 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
+button {
+  border: 5px orange;
+  text-align: center;
+  padding: 0 5px;
+}
+
+span {
+  max-width: 300px;
+}
+
 h1 {
+  text-align: center;
+}
+
+.center {
   text-align: center;
 }
 
 .column {
   float: left;
   width: 50%;
+}
+
+.header {
+  max-width: 750px;
+  text-align: center;
 }
