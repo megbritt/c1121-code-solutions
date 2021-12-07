@@ -2,20 +2,16 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 .column-one-fourth {
   max-width: 25%;
 }
 
-.column-one-fourth > img {
-  max-width: 200px;
-}
-
 .column-one-third {
   max-width: 33.3%;
-}
-
-.column-one-third > img {
-  max-width: 250px;
 }
 
 .column-two-thirds {
