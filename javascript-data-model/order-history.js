@@ -9,11 +9,13 @@ var orderHistory = [
 
     itemsPurchased: [
       {
+        type: 'book',
         title: 'JavaScript for impatient programmers',
-        hasAuthor: true,
-        returnWindowDate: 'September 7, 2020',
+        author: 'Rauschmayer, Dr. Axel',
+        canReturnUntil: 'September 7, 2020',
         originalPrice: 31.55,
-        writtenProductReview: false
+        writtenProductReview: false,
+        imgUrl: 'images/javascript.png'
       }
     ]
   },
@@ -28,11 +30,13 @@ var orderHistory = [
 
     itemsPurchased: [
       {
+        type: 'book',
         title: 'The Timeless Way of Building',
-        hasAuthor: true,
-        returnWindowDate: 'August 19, 2020',
+        author: 'Alexander, Christopher',
+        canReturnUntil: 'August 19, 2020',
         originalPrice: 41.33,
-        writtenProductReview: false
+        writtenProductReview: false,
+        imgUrl: 'images/building-book.png'
       }
     ]
   },
@@ -47,11 +51,13 @@ var orderHistory = [
 
     itemsPurchased: [
       {
+        type: 'electronics',
         title: 'Gamecube Controller Adapter',
-        hasAuthor: false,
-        returnWindowDate: 'August 5, 2020',
+        author: null,
+        canReturnUntil: 'August 5, 2020',
         originalPrice: 15.98,
-        writtenProductReview: false
+        writtenProductReview: false,
+        imgUrl: 'images/gc-controller-adapter.png'
       }
     ]
   },
@@ -66,19 +72,23 @@ var orderHistory = [
 
     itemsPurchased: [
       {
+        type: 'electronics',
         title: 'Gamecube Controller',
-        hasAuthor: false,
-        returnWindowDate: 'August 4, 2020',
+        author: null,
+        canReturnUntil: 'August 4, 2020',
         originalPrice: 94.95,
-        writtenProductReview: false
+        writtenProductReview: false,
+        imgUrl: 'images/gc-controller.png'
       },
 
       {
+        type: 'book',
         title: 'The Art of Sql',
-        hasAuthor: true,
-        returnWindowDate: 'August 4, 2020',
+        author: 'Faroult, Stephane',
+        canReturnUntil: 'August 4, 2020',
         originalPrice: 33.99,
-        writtenProductReview: true
+        writtenProductReview: true,
+        imgUrl: 'images/sql.png'
       }
     ]
   }
