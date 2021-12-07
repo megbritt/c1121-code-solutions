@@ -6,11 +6,16 @@ var orderHistory = [
     orderNum: '114-3941689-8772232',
     deliveredDate: 'August 8, 2020',
     handedToResident: false,
-    title: 'JavaScript for impatient programmers',
-    hasAuthor: true,
-    returnWindowDate: 'September 7, 2020',
-    originalPrice: 31.55,
-    writtenProductReview: false
+
+    itemsPurchased: [
+      {
+        title: 'JavaScript for impatient programmers',
+        hasAuthor: true,
+        returnWindowDate: 'September 7, 2020',
+        originalPrice: 31.55,
+        writtenProductReview: false
+      }
+    ]
   },
 
   {
@@ -20,11 +25,16 @@ var orderHistory = [
     orderNum: '113-9984268-1280257',
     deliveredDate: 'July 20, 2020',
     handedToResident: true,
-    title: 'The Timeless Way of Building',
-    hasAuthor: true,
-    returnWindowDate: 'August 19, 2020',
-    originalPrice: 41.33,
-    writtenProductReview: false
+
+    itemsPurchased: [
+      {
+        title: 'The Timeless Way of Building',
+        hasAuthor: true,
+        returnWindowDate: 'August 19, 2020',
+        originalPrice: 41.33,
+        writtenProductReview: false
+      }
+    ]
   },
 
   {
@@ -34,11 +44,16 @@ var orderHistory = [
     orderNum: '114-2875557-9059409',
     deliveredDate: 'July 7, 2020',
     handedToResident: true,
-    title: 'Gamecube Controller Adapter',
-    hasAuthor: false,
-    returnWindowDate: 'August 5, 2020',
-    originalPrice: 15.98,
-    writtenProductReview: false
+
+    itemsPurchased: [
+      {
+        title: 'Gamecube Controller Adapter',
+        hasAuthor: false,
+        returnWindowDate: 'August 5, 2020',
+        originalPrice: 15.98,
+        writtenProductReview: false
+      }
+    ]
   },
 
   {
@@ -48,10 +63,23 @@ var orderHistory = [
     orderNum: '113-2883177-2648248',
     deliveredDate: 'July 5, 2020',
     handedToResident: false,
-    title: ['Gamecube Controller', 'The Art of Sql'],
-    hasAuthor: [false, true],
-    returnWindowDate: 'August 4, 2020',
-    originalPrice: [94.95, 33.99],
-    writtenProductReview: [false, true]
+
+    itemsPurchased: [
+      {
+        title: 'Gamecube Controller',
+        hasAuthor: false,
+        returnWindowDate: 'August 4, 2020',
+        originalPrice: 94.95,
+        writtenProductReview: false
+      },
+
+      {
+        title: 'The Art of Sql',
+        hasAuthor: true,
+        returnWindowDate: 'August 4, 2020',
+        originalPrice: 33.99,
+        writtenProductReview: true
+      }
+    ]
   }
 ];
