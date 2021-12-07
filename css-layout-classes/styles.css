@@ -1,0 +1,28 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.column-one-fourth {
+  max-width: 25%;
+}
+
+.column-one-third {
+  max-width: 33.3%;
+}
+
+.column-two-thirds {
+  max-width: 66.7%;
+}
+
+.container {
+  margin: auto;
+  max-width: 800px;
+}
+
+.row {
+  display: flex;
+}
