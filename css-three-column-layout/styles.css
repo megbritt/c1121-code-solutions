@@ -42,15 +42,15 @@ h4 {
   max-width: 33%;
 }
 
-#container {
+.container {
   padding: 10px;
   color: white;
   background-color: #1996da;
-}
-
-#row {
-  display: flex;
   margin: auto;
   max-width: 1000px;
   justify-content: center;
+}
+
+.row {
+  display: flex;
 }
