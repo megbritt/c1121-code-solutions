@@ -14,10 +14,10 @@ h2 {
 }
 
 .nonbutton {
-  border-radius: 58% gray;
+  border: solid 1px gray;
+  border-radius: 1em;
   font-family: 'AtlasGrotesk', sans-serif;
   font-size: 50%;
-  margin: auto;
   margin-bottom: 15px;
   min-width: 500px;
   min-height: 45px;
@@ -25,6 +25,8 @@ h2 {
 
 input::placeholder {
   padding-left: 10px;
+  font-weight: 650;
+  color: #999;
 }
 
 label {
@@ -39,15 +41,25 @@ label {
   border-radius: 20px;
   color: #fffcfc;
   font-family: 'Brandon Grotesque', sans-serif;
-  font-weight: bold;
+  font-weight: 450;
   padding: 5px 19px;
 }
 
-.row {
+.container {
   margin: auto;
-  width: 50%;
+  max-width: 506px;
 }
 
 .submit {
   text-align: right;
+}
+
+.option-value {
+  min-width: 507px;
+  min-height: 45px;
+  margin-bottom: 15px;
+}
+
+select {
+  background: #f3f3f3;
 }
