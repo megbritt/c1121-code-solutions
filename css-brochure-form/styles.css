@@ -56,10 +56,12 @@ label {
 
 .option-value {
   min-width: 507px;
-  min-height: 45px;
+  min-height: 50px;
   margin-bottom: 15px;
 }
 
 select {
   background: #f3f3f3;
+  border: solid 1px gray;
+  border-radius: 0.5em;
 }
