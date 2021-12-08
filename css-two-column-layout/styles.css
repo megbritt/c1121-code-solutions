@@ -3,29 +3,56 @@ body {
 }
 
 button {
-  border: 5px orange;
-  text-align: center;
-  padding: 0 5px;
-}
-
-span {
-  max-width: 300px;
+  border: 2px solid #d14c45;
+  background-color: white;
+  color: #d14c45;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 h1 {
   text-align: center;
+  font-size: 3em;
+  font-stretch: semi-expanded;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
-.center {
+img {
+  max-width: 100px;
+  padding-bottom: 50px;
+}
+
+p {
+  max-width: 280px;
+  margin: 50px 50px 50px 50px;
+}
+
+.caption {
+  max-width: 650px;
   text-align: center;
 }
 
-.column {
-  float: left;
-  width: 50%;
+.caption,
+p {
+  margin: auto;
+  letter-spacing: 0.3px;
+  line-height: 150%;
+  font-weight: 500;
+  color: #454545;
 }
 
-.header {
-  max-width: 750px;
-  text-align: center;
+.container {
+  margin: auto;
+  max-width: 800px;
+}
+
+.row {
+  display: flex;
+  padding: 17px;
+}
+
+.row1 {
+  display: flex;
 }
