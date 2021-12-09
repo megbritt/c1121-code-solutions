@@ -6,9 +6,10 @@ button {
   border: 2px solid #d14c45;
   background-color: white;
   color: #d14c45;
-  padding: 14px 28px;
+  padding: 14px 48px;
   font-size: 16px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 h1 {
@@ -20,17 +21,23 @@ h1 {
 }
 
 img {
-  max-width: 100px;
+  max-width: 120px;
   padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  padding-top: 23px;
+  letter-spacing: 0.7px;
 }
 
 p {
-  max-width: 280px;
+  font-size: 0.1em;
   margin: 50px 50px 50px 50px;
+  font-weight: 900;
 }
 
 .caption {
-  max-width: 650px;
   text-align: center;
 }
 
@@ -45,14 +52,21 @@ p {
 
 .container {
   margin: auto;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .row {
   display: flex;
-  padding: 17px;
 }
 
 .row1 {
   display: flex;
+}
+
+.column1 {
+  max-width: 35%;
+}
+
+.column {
+  width: 60%;
 }
