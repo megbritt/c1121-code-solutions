@@ -1,0 +1,16 @@
+.column-one-fifths {
+  width: 20%;
+}
+
+.container {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.row {
+  display: flex;
+}
+
+.img {
+  object-fit: contain;
+}
