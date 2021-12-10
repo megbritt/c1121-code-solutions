@@ -10,6 +10,14 @@ img {
   align-items: center;
 }
 
+.hero-image {
+  background-color: #0000;
+  background-image: url(images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+}
+
 .justify-between {
   justify-content: space-between;
 }
