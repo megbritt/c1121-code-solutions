@@ -1,8 +1,35 @@
+button {
+  background: #2b2b78;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+
+.navbar {
+  justify-content: space-evenly;
+}
+
+.navbar-logo {
+  padding-top: 15px;
+}
+
+.row {
+  display: flex;
+}
+
+.column-half {
+  max-width: 50%;
+}
+
 html {
   font-family: 'Avenir.woff2', sans-serif;
 }
 
-img {
+.page-header > img {
   max-width: 150px;
 }
 
@@ -10,12 +37,21 @@ img {
   align-items: center;
 }
 
-.hero-image {
-  background-color: #0000;
-  background-image: url(images/hero.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 80%;
+.first-txt {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+}
+
+.second-txt {
+  position: absolute;
+  top: 17px;
+  left: 150px;
+}
+
+.hero-img {
+  margin: 30px;
+  position: relative;
 }
 
 .justify-between {
@@ -42,10 +78,6 @@ img {
   padding-bottom: 50px;
 }
 
-.row {
-  display: flex;
-}
-
 .text-align-center {
   text-align: center;
 }
@@ -53,4 +85,8 @@ img {
 nav > a {
   color: #adadad;
   text-decoration: none;
+}
+
+.hero-img > img {
+  width: 100%;
 }
