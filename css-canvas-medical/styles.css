@@ -1,0 +1,48 @@
+html {
+  font-family: 'Avenir.woff2', sans-serif;
+}
+
+img {
+  max-width: 150px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  text-decoration: none;
+}
+
+.page-header {
+  background-color: darkslategray;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.row {
+  display: flex;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+nav > a {
+  color: #adadad;
+  text-decoration: none;
+}
