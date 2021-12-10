@@ -10,5 +10,5 @@ function oddOrEven(numbers) {
       newArray.push('odd');
     }
   }
-  return numbers;
+  return newArray;
 }
