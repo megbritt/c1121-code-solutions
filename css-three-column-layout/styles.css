@@ -1,3 +1,9 @@
+body {
+  color: white;
+  background-color: #1996da;
+  justify-content: center;
+}
+
 div {
   font-family: 'Lato', sans-serif;
 }
@@ -10,7 +16,7 @@ h4 {
 
 h1 {
   font-weight: 500;
-  font-size: 29px;
+  font-size: 25px;
 }
 
 h3 {
@@ -28,27 +34,26 @@ h3 {
 
 img {
   padding-top: 25px;
-  max-width: 60px;
+  width: 100%;
 }
 
 h4 {
-  max-width: 248px;
   color: #dadcdd;
   font-weight: 400;
 }
 
-.column {
+.column-one-third {
   padding: 10px 30px;
-  max-width: 33%;
+  width: 33%;
+}
+
+.column-one-half {
+  width: 50%;
 }
 
 .container {
-  padding: 10px;
-  color: white;
-  background-color: #1996da;
+  max-width: 800px;
   margin: auto;
-  max-width: 1000px;
-  justify-content: center;
 }
 
 .row {
