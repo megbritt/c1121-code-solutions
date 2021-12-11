@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 div {
   color: #2b2b2b;
   font-weight: 600;
@@ -19,8 +23,8 @@ h2 {
   font-family: 'AtlasGrotesk', sans-serif;
   font-size: 50%;
   margin-bottom: 15px;
-  min-width: 500px;
-  min-height: 45px;
+  width: 100%;
+  padding: 10px;
 }
 
 input::placeholder {
@@ -32,7 +36,10 @@ input::placeholder {
 label {
   font-family: 'Brandon Grotesque', sans-serif;
   padding: 10px;
-  padding-bottom: 5px;
+}
+
+.label {
+  margin-bottom: 5px;
 }
 
 .button {
@@ -52,11 +59,11 @@ label {
 
 .submit {
   text-align: right;
+  width: 100%;
 }
 
 .option-value {
-  min-width: 507px;
-  min-height: 50px;
+  width: 100%;
   margin-bottom: 15px;
 }
 
@@ -64,4 +71,5 @@ select {
   background: #f3f3f3;
   border: solid 1px gray;
   border-radius: 0.5em;
+  padding: 10px;
 }
