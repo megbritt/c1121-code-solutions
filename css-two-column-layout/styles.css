@@ -24,6 +24,12 @@ img {
   max-width: 120px;
   padding-bottom: 50px;
   margin-bottom: 50px;
+  position: absolute;
+}
+
+.right {
+  position: relative;
+  right: 90px;
 }
 
 h3 {
@@ -59,14 +65,6 @@ p {
   display: flex;
 }
 
-.row1 {
-  display: flex;
-}
-
-.column1 {
-  max-width: 35%;
-}
-
-.column {
+.column-three-fifths {
   width: 60%;
 }
