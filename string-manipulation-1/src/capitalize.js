@@ -1,26 +1,19 @@
 /* exported capitalize */
 
 /* - storage space for the changed word
-   - for each letter in the word
-        - make sure first letter is capitalized
-              - if first letter is not capitalized
-                we capitalize it
-        - if letter is capitalized but is not the
-          first letter, uncapitalize aforementioned
-          letter, and add that letter to the storage
-          space for the changed word
+   - capitalize the first letter in the word
+   - for each letter after the first letter in the word
+      - lowercase the rest of the letters
   - give back capitalized word
 */
 
 function capitalize(word) {
   var capitalizedString = '';
 
-  for (var i = 0; i < word.length; i++) {
-    if (i === 0) {
-      capitalizedString = word[0].toUpperCase();
-    } else {
-      capitalizedString += word[i].toLowerCase();
-    }
+  capitalizedString = word[0].toUpperCase();
+
+  for (var i = 1; i < word.length; i++) {
+    capitalizedString += word[i].toLowerCase();
   }
   return capitalizedString;
 }

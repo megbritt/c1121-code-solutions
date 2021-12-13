@@ -1,18 +1,16 @@
 /* exported isUpperCased */
 
-/* - for each letter in the word, one at a time
-     go through each letter to make sure it is
-     a fully uppercased word (each letter in the word
-     is uppercased).
-        - if there is a lowercased letter, give back false
-        - if there are no lowercased letters, give back true
+/* - make storage space for uppercased version of word
+   - check to see if uppercased version of word matches original word
+       - if the two words match, give back true
+       - if the two words do not match, give back false
 */
 
 function isUpperCased(word) {
-  for (var i = 0; i < word.length; i++) {
-    if (word[i] >= 'a' && word[i] <= 'z') {
-      return false;
-    }
+  var newWord = word.toUpperCase();
+
+  if (word === newWord) {
+    return true;
   }
-  return true;
+  return false;
 }
