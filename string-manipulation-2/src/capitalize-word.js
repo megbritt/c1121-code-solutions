@@ -11,13 +11,7 @@
               letter, and add that letter to the storage
               space for the changed word
       - if original word is JavaScript
-            - make sure first letter and fifth letter are capitalized
-                  - if first or fifth letter is not capitalized
-                    we capitalize it
-            - if letter is capitalized but is not the
-              first letter or fifth letter in JavaScript,
-               uncapitalize aforementioned letter, and add that letter
-               to the storage space for the changed word
+            - make capitalized word JavaScript
   - give back correctly capitalized word
 */
 
@@ -35,13 +29,7 @@ function capitalizeWord(word) {
       }
     }
   } else {
-    for (var j = 0; j < word.length; j++) {
-      if (j === 0 || j === 4) {
-        capitalizedString += copyWord[j].toUpperCase();
-      } else {
-        capitalizedString += copyWord[j].toLowerCase();
-      }
-    }
+    capitalizedString = 'JavaScript';
   }
   return capitalizedString;
 }
