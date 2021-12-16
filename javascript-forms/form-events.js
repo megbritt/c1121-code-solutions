@@ -10,20 +10,13 @@ function handleBlur(event) {
 
 function handleInput(event) {
   console.log('input event was fired');
-  console.log('event.target.name', event.target.name);
-}
-
-function handleKeyDown(event) {
-  console.log('keydown event was fired');
-  $username.textContent += event;
-  console.log('$username.textContent', $username.textContent);
+  console.log('value of', event.target.name + ':' + event.target.value);
 }
 
 var $username = document.querySelector('#user-name');
 $username.addEventListener('focus', handleFocus);
 $username.addEventListener('blur', handleBlur);
 $username.addEventListener('input', handleInput);
-$username.addEventListener('keydown', handleKeyDown);
 
 var $userEmail = document.querySelector('#user-email');
 $userEmail.addEventListener('focus', handleFocus);
