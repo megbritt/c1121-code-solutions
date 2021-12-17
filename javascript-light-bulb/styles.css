@@ -1,19 +1,26 @@
 .container {
-  display: table;
-  margin: auto;
-  height: 900px;
-  width: 900px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .row {
-  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  height: 30px;
+  margin-top: -15px;
   text-align: center;
-  position: relative;
-  display: table-cell;
 }
 
-body {
+.yellow-bg {
   background-color: #fef9f1;
+}
+
+.black-bg {
+  background-color: #111;
 }
 
 .circle-on {
@@ -22,7 +29,9 @@ body {
   border-radius: 50%;
   width: 250px;
   height: 250px;
-  box-shadow: -10px -10px 18px #faea84;
+  box-shadow: 0 0 30px 20px #f1e8b4;
+  border: #faea84;
+  transition: all 0.5s ease-in;
 }
 
 .circle-off {
@@ -31,5 +40,8 @@ body {
   width: 250px;
   height: 250px;
   background-color: #222224;
-  box-shadow: 0 -10px black;
+  box-shadow:
+    0 -10px black,
+    0 -20px black;
+  border: #222224;
 }
