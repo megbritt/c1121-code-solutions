@@ -1,4 +1,29 @@
-.button-violet {
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  width: 600px;
+  height: 300px;
+}
+
+.modal-btn {
   background-color: #4a4ae9;
   border-radius: 5px;
   color: #ffff;
@@ -8,9 +33,11 @@
   padding-top: 5px;
   padding-bottom: 5px;
   z-index: 1;
+  box-shadow: 2px 4px 3px #a8a9a9;
+  border: none;
 }
 
-.button-red {
+.red-btn {
   background-color: #eb5d5d;
   color: #ffff;
   border-radius: 5px;
@@ -19,9 +46,11 @@
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
+  box-shadow: 2px 4px 3px #a8a9a9;
+  border: none;
 }
 
-body {
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+span {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 32px;
 }
