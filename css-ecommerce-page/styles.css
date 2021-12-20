@@ -55,7 +55,8 @@ h1 {
 
 .yellow-bg {
   background-color: #fff2e7;
-  padding: 1px;
+  padding: 2px;
+  border-radius: 5px;
 }
 
 .striked-text {
