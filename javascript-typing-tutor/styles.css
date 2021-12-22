@@ -1,0 +1,40 @@
+body {
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.container {
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.height-thousand {
+  height: 1000px;
+}
+
+.justify-align-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.correct {
+  color: #18cd1b;
+  border-bottom: none;
+}
+
+.wrong {
+  color: red;
+  border-bottom: 5px solid red;
+}
+
+.underline {
+  border-bottom: 5px solid black;
+  padding-bottom: 5px;
+}
