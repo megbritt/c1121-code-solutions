@@ -1,14 +1,14 @@
-var $modalBtn = document.querySelector('.modal-btn');
-var $modal = document.querySelector('.modal');
-var $closeBtn = document.querySelector('.red-btn');
+var $modalButton = document.querySelector('.open-modal-button');
+var $noButton = document.querySelector('.red-btn');
+var $hidden = document.querySelector('.hidden');
 
-$modalBtn.addEventListener('click', handleClick);
-$closeBtn.addEventListener('click', handleClick2);
+$modalButton.addEventListener('click', handleClick);
+$noButton.addEventListener('click', handleClickNo);
 
 function handleClick(event) {
-  $modal.style.display = 'block';
+  $hidden.className = 'show';
 }
 
-function handleClick2(event) {
-  $modal.style.display = 'none';
+function handleClickNo(event) {
+  $hidden.className = 'hidden';
 }
