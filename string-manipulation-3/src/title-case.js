@@ -40,7 +40,8 @@
                 - we have a substring from index 0 to aforementioned index of dash character
                   concatenated with the dash character itself which is then concatenated
                   with the capitalized letter succeeding it which is then concatenated with
-                  the substring ater capitalized letter onward
+                  the substring after capitalized letter onward
+                - give back final capitalized title
 */
 
 function titleCase(title) {
@@ -50,7 +51,7 @@ function titleCase(title) {
   var index = -1;
   var correctedTitleFinal = '';
 
-  eachWord[0] = eachWord[0].charAt(0).toUpperCase() + eachWord[0].substr(1);
+  eachWord[0] = eachWord[0].charAt(0).toUpperCase() + eachWord[0].substring(1);
 
   for (var i = 1; i < eachWord.length; i++) {
     if (eachWord[i] !== 'a' && eachWord[i] !== 'an' && eachWord[i] !== 'and' &&
@@ -60,7 +61,7 @@ function titleCase(title) {
         eachWord[i] !== 'or' && eachWord[i] !== 'per' && eachWord[i] !== 'the' &&
         eachWord[i] !== 'to' && eachWord[i] !== 'javascript' && eachWord[i] !== 'api') {
 
-      eachWord[i] = eachWord[i].charAt(0).toUpperCase() + eachWord[i].substr(1);
+      eachWord[i] = eachWord[i].charAt(0).toUpperCase() + eachWord[i].substring(1);
 
     }
 
@@ -73,11 +74,11 @@ function titleCase(title) {
     }
 
     if (eachWord[i] === 'an' && eachWord[i - 1][eachWord[i - 1].length - 1] === ':') {
-      eachWord[i] = eachWord[i].charAt(0).toUpperCase() + eachWord[i].substr(1);
+      eachWord[i] = eachWord[i].charAt(0).toUpperCase() + eachWord[i].substring(1);
     }
 
     if (eachWord[i] === 'the' && eachWord[i - 1][eachWord[i - 1].length - 1] === ':') {
-      eachWord[i] = eachWord[i].charAt(0).toUpperCase() + eachWord[i].substr(1);
+      eachWord[i] = eachWord[i].charAt(0).toUpperCase() + eachWord[i].substring(1);
     }
   }
 
