@@ -1,0 +1,93 @@
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+button {
+  background-color: white;
+  border-color: #d24c45;
+  border-style: solid;
+  color: #d24c45;
+  font-size: 0.8rem;
+  font-weight: bold;
+  height: 40px;
+  width: 170px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3.3rem;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+img {
+  width: 6.5rem;
+  bottom: 15px;
+}
+
+p {
+  color: #595959;
+}
+
+.container {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.row {
+  display: flex;
+}
+
+.box {
+  flex-basis: 50%;
+  padding: 20px;
+}
+
+.column-full {
+  width: 100%;
+}
+
+.column-one-fourth {
+  width: 25%;
+}
+
+.column-three-fourths {
+  width: 75%;
+}
+
+.column-750 {
+  width: 750px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+.margin-top {
+  margin-top: 10px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.width-85 {
+  width: 85%;
+}
+
+.width-85 > p {
+  line-height: 30px;
+}
