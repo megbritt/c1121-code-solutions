@@ -1,0 +1,68 @@
+.container {
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.height-thousand {
+  height: 1000px;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  width: 500px;
+  height: 250px;
+  background-color: white;
+  text-align: center;
+  padding-top: 50px;
+  border-radius: 5px;
+}
+
+.open-modal-button {
+  width: 230px;
+  height: 50px;
+  font-size: 1.75rem;
+  box-shadow: 1px 1px 5px black;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a4ae8;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-btn {
+  width: 100px;
+  height: 50px;
+  background-color: #eb5d5d;
+  color: white;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  margin-top: 50px;
+  box-shadow: 1px 1px 5px black;
+}
+
+.show {
+  display: flex;
+}
