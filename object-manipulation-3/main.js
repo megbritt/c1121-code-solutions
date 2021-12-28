@@ -20,23 +20,23 @@ function drawNewHand(players) {
   return hand;
 }
 
-function passOutCards(hand, numCardsPerHand) {
-  for (var k = 0; k < hand.length; k++) {
-    hand[k].hand = shuffledDeck.splice(0, numCardsPerHand);
+function passOutCards(player, numCardsPerHand) {
+  for (var k = 0; k < player.length; k++) {
+    player[k].hand = shuffledDeck.splice(0, numCardsPerHand);
     var totalScore = 0;
 
     for (var l = 0; l < numCardsPerHand; l++) {
-      if (hand[k].hand[l].rank === 'A') {
+      if (player[k].hand[l].rank === 'A') {
         totalScore += 11;
-      } else if (['J', 'Q', 'K'].includes(hand[k].hand[l].rank)) {
+      } else if (['J', 'Q', 'K'].includes(player[k].hand[l].rank)) {
         totalScore += 10;
       } else {
-        totalScore += parseInt(hand[k].hand[l].rank);
+        totalScore += parseInt(player[k].hand[l].rank);
       }
     }
-    hand[k].score = totalScore;
+    player[k].score = totalScore;
   }
-  return hand;
+  return player;
 }
 
 function appendMaxScorePlayer(max, players, numCardsPerHand) {
@@ -65,7 +65,18 @@ function appendMaxScorePlayer(max, players, numCardsPerHand) {
   if (winnersCircle.size > 1) {
     winners = Array.from(winnersCircle);
 
-    console.log('There is a tie between ' + winners[0] + ' and ' + winners[1] + ' with a value of ' + max.score);
+    if (winnersCircle.size === 2) {
+      console.log('There is a tie between ' + winners[0] + ' and ' + winners[1] + ' with a value of ' + max.score);
+    } else if (winnersCircle.size === 3) {
+      console.log('There is a three-way tie among ' + winners[0] + ', ' + winners[1] + ', and ' + winners[2] + ' with a value of ' + max.score);
+    } else {
+      console.log('There is a ' + winnersCircle.size + '-way tie with a value of ' + max.score + 'among the following players:');
+
+      for (var i = 0; i < winnersCircle.length; i++) {
+        console.log(winners[i]);
+      }
+    }
+
     console.log('Tiebreaker Rematch Game');
 
     startGame(winners, numCardsPerHand);
