@@ -36,6 +36,10 @@ h1 {
   text-align: center;
 }
 
+p {
+  margin-top: -5px;
+}
+
 .price {
   margin-top: 15px;
 }
