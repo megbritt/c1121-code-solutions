@@ -41,6 +41,10 @@ nav > a {
   text-decoration: none;
 }
 
+p {
+  margin-top: -15px;
+}
+
 .align-center {
   align-items: center;
 }
@@ -196,6 +200,10 @@ nav > a {
 
 .pointer {
   cursor: pointer;
+}
+
+.size-small {
+  max-width: 150px;
 }
 
 .text-align-center {
