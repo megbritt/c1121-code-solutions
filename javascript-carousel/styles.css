@@ -1,0 +1,41 @@
+.container {
+  border: black solid 2px;
+  margin: 2rem;
+}
+
+.row {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.padding-right {
+  padding: 0 6rem;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.padding {
+  padding: 2rem;
+}
+
+i {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+img {
+  padding: 2rem;
+}
