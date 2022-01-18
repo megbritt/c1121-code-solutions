@@ -1,0 +1,553 @@
+    1  git config --global user.name "Megan Martinez"
+    2  git config --global user.email "mmart085@ucr.edu"
+    3  git config --global --list
+    4  cd ~/repos/c1121-code-solutions
+    5  git switch master
+    6  git pull origin master
+    7  git branch http-messages
+    8  git switch http-messages
+    9  git status
+   10  http http://www.example.com
+   11  http --verbose http://www.example.com
+   12  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+   13  http --body GET https://example.com > http-messages/index.html
+   14  git status
+   15  git add .editorconfig
+   16  git add .eslinrc
+   17  git add .eslintrc
+   18  git add .gitignore
+   19  git add .husky/pre-comit
+   20  git add .husky/pre-commit
+   21  git add .npmrc
+   22  git add __sample__/.eslintrc
+   23  git add __sample__/component.jsx
+   24  git add __sample__/index.html
+   25  git add __sample__/main.js
+   26  git add __sample__/styles.css
+   27  git add html-skeleton/.npmrc
+   28  git add html-skeleton/index.html
+   29  git add package-lock.json
+   30  git add package.json
+   31  git add http-messages
+   32  git commit -m "Completed http-messages exercise."
+   33  git push origin http-messages
+   34  git status
+   35  git restore --staged .husky/pre-commit
+   36  git status
+   37  git add http-messages
+   38  git commit -m "Completed http-messages exercise."
+   39  git stash
+   40  git status
+   41  git add http-messages
+   42  git stash
+   43  http --verbose http://www.example.com
+   44  git status
+   45  git add http-messages
+   46  git commit -m "Completed http-messages exercise."
+   47  git push origin http-messages
+   48  clear
+   49  git switch master
+   50  git pull origin master
+   51  git status
+   52  git branch javascript-ajax
+   53  git switch javascript-ajax
+   54  git status
+   55  git add javascript-ajax
+   56  git commit -m "Completed javascript-ajax exercise."
+   57  git push origin javascript-ajax
+   58  git status
+   59  git switch master
+   60  git pull origin master
+   61  cd
+   62  http --body GET https://api.jikan.moe/v3/search/anime?q=Fruits%20Basket&page=1
+   63  http GET --body https://ghibliapi.herokuapp.com/#:~:text=curl%20https%3A//ghibliapi.herokuapp.com/films/58611129%2D2dbc%2D4a81%2Da72f%2D77ddfc1b1b49
+   64  curl https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49 
+   65  clear
+   66  http https://api.simkl.com/oauth/pin?client_id=396e9f572dd7843d14fbc773fcd852bf7a3f5584083ef9fd07692a36c06f47b5
+   67  http GET --body https://simkl.com/anime/978165/blade-runner-black-lotus
+   68  http GET --body  https://api.simkl.com/oauth/pin?client_id=396e9f572dd7843d14fbc773fcd852bf7a3f5584083ef9fd07692a36c06f47b5&movie
+   69  http GET --body https://api.simkl.com/tv/episodes/2090?client_id=396e9f572dd7843d14fbc773fcd852bf7a3f5584083ef9fd07692a36c06f47b5
+   70  curl https://botw-compendium.herokuapp.com/api/v1/entry/white-maned_lynel
+   71  clear
+   72  curl https://botw-compendium.herokuapp.com/api/v1/entry/white-maned_lynel
+   73  clear
+   74  http GET --body http://www.omdbapi.com/?i=tt3896198&apikey=4ece840b
+   75  curl http://www.omdbapi.com/?i=tt3896198&apikey=4ece840b
+   76  http GET --body http://www.omdbapi.com/?i=tt3896198&apikey=4ece840b
+   77  http GET --body http://www.omdbapi.com/?t=guardians+of+the+galaxy&apikey=4ece840b
+   78  http GET http://acnhapi.com/v1/fish/1
+   79  http --body GET GET /api/amiibo/?name=value
+   80  clear
+   81  http --body GET https://www.amiiboapi.com/api/amiibo/?name=Link
+   82  clear
+   83  http --body GET https://api.pokemontcg.io/v2/cards
+   84  http --body GET https://api.pokemontcg.io/v2/cardsclear
+   85  clear
+   86  HTTP --body GET https://pokeapi.co/api/v2/pokemon/ditto
+   87  clear
+   88  http --body GET https://pokeapi.co/api/v2/pokemon/ditto
+   89  clear
+   90  curl "https://api.trace.moe/search?anilistID=1&url=https://images.plurk.com/32B15UXxymfSMwKGTObY5e.jpg"
+   91  cd ~/repos
+   92  git clone git@github.com: meganbmartinez/ajax-project.git
+   93  git clone git@github.com:meganbmartinez/ajax-project.git
+   94  cd ajax-project
+   95  npm ci
+   96  git status
+   97  git branch --list
+   98  git branch issue-1-search-an-anime
+   99  git switch issue-1-search-an-anime
+  100  git status
+  101  git stash
+  102  git status
+  103  git add css/layout.css
+  104  git add css/reset.css
+  105  git add css/styles.css
+  106  git add images/favicon.ico
+  107  git add index.html
+  108  git add js/main.js
+  109  git add css/fonts.css
+  110  git add /fonts
+  111  git add fonts/
+  112  git add images/magnifying-glass.png
+  113  git status
+  114  git commit -m "Completed issue-1-search-an-anime."
+  115  git push origin issue-1-search-an-anime
+  116  git status
+  117  git add js/main.js
+  118  git commit -m "Added event listener for XMLHttpRequest."
+  119  git commit -m "Added event listener for XMLHttpRequest." --no-verify
+  120  git push origin issue-1-search-an-anime
+  121  git switch master
+  122  git pull origin master
+  123  git status
+  124  git pull origin master
+  125  git switch master
+  126  cd ~/repos/ajax-project
+  127  git branch --list
+  128  git branch issue-2-view-search-results
+  129  git branch --list
+  130  git switch issue-2-view-search-results
+  131  git status
+  132  git switch master
+  133  git pull origin master
+  134  git switch issue-2-view-search-results
+  135  git status
+  136  git add index.html
+  137  git commit -m "Added [data-view="search-results"]."
+  138  cd ~/repos/ajax-project
+  139  git status
+  140  git commit -m "Added [data-view=''search-results'']." --no-verify
+  141  git push origin issue-2-view-search-results
+  142  git status
+  143  git switch master
+  144  git switch issue-2-view-search-results
+  145  git status
+  146  git stash
+  147  http GET http://www.omdbapi.com/ t==guardians+of+the+galaxy apikey==4ece840b
+  148  https://api.jikan.moe/v3/search/anime?q=Fruits%20Basket
+  149  http GET https://api.jikan.moe/v3/search/anime?q=Fruits%20Basket
+  150  cd ~/repos/ajax-project
+  151  git status
+  152  git add css/layout.css
+  153  git add css/reset.css
+  154  git add css/styles.css
+  155  git add index.html
+  156  git add js/data.js
+  157  git add js/main.js
+  158  git add package-lock.json
+  159  git add images/poster_placeholder.jpg
+  160  git status
+  161  git commit -m "Completed issue-2-view-search-results." --no-verify
+  162  git push origin issue-2-view-search-results
+  163  git commit -m "Completed issue-2-view-search-results." --no-verify
+  164  git push origin issue-2-view-search-results
+  165  git status
+  166  cd ~/repos/ajax-project
+  167  git branch --list
+  168  git branch issue-4-add-to-watch-list
+  169  git branch --list
+  170  git switch issue-4-add-to-watch-list
+  171  git status
+  172  git switch master
+  173  git pull origin master
+  174  git switch issue-4-add-to-watch-list
+  175  git status
+  176  git add index.html
+  177  git add js/main.js
+  178  git commit -m "Added div [data-view=''watch-list'']."
+  179  git push origin issue-4-add-to-watch-list
+  180  git stash
+  181  git status
+  182  git stash
+  183  git status
+  184  git add css/layout.css
+  185  git add css/styles.css
+  186  git add index.html
+  187  git add js/main.js
+  188  git add images/white-watch-list-icon.png
+  189  git commit -m "Added watch list icon to nav bar."
+  190  git push origin issue-4-add-to-watch-list
+  191  git status
+  192  clear
+  193  git status
+  194  git add css/layout.css
+  195  git add css/styles.css
+  196  git add index.html
+  197  git add js/data.js
+  198  git add js/main.js
+  199  git add images/blue-checkmark.png
+  200  git status
+  201  git commit -m "Completed issue-4-add-to-watch-list."
+  202  git push origin issue-4-add-to-watch-list
+  203  git status
+  204  pwd
+  205  cd ~/repos/ajax-project
+  206  git status
+  207  cd
+  208  git status
+  209  cd ~/repos/ajax-project
+  210  git status
+  211  cd
+  212  cd ~/repos
+  213  pwd
+  214  cd ~/repos
+  215  git clone git@github.com:meganbmartinez/driving-game.git
+  216  cd drviing-game
+  217  cd driving-game
+  218  npm ci #
+  219  git branch --list
+  220  git branch user-can-see-car
+  221  git branch --list
+  222  git switch user-can-see-car
+  223  git status
+  224  git add index.html
+  225  git add styles.css
+  226  git stash
+  227  git switch master
+  228  git branch --list
+  229  git branch -d user-can-see-car
+  230  git branch --list
+  231  git branch issue-1-user-can-see-car
+  232  git switch issue-1-user-can-see-car
+  233  git status
+  234  git add index.html
+  235  git add styles.css
+  236  git commit -m "Completed issue-1-user-can-see-car." --no-verify
+  237  git push origin issue-1-user-can-see-car
+  238  git switch master
+  239  git pull origin master
+  240  git status
+  241  git pull origin master
+  242  git branch --list
+  243  git branch issue-2-user-can-turn-car
+  244  git switch issue-2-user-can-turn-car
+  245  git status
+  246  git add index.html
+  247  git add styles.css
+  248  git add main.js
+  249  git status
+  250  git commit -m "Completed issue-2-user-can-turn-car." --no-verify
+  251  git push origin issue-2-user-can-turn-car
+  252  git switch master
+  253  git pull origin master
+  254  git status
+  255  git branch --list
+  256  git branch issue-3-user-can-start-car
+  257  git branch --list
+  258  git switch issue-3-user-can-start-car
+  259  git status
+  260  cs
+  261  cd
+  262  cd ~repos/ajax-project
+  263  cd ~/repos/ajax-project
+  264  git pull origin ajax-project
+  265  git pull origin master
+  266  cd
+  267  cd ~/repos/driving-game
+  268  git status
+  269  git add index.html
+  270  git add data.js
+  271  git commit -m "Added data model with x and y coordinates."
+  272  cd ~/repos/driving-game
+  273  git status
+  274  git commit -m "Added data model with x and y coordinates." --no-verify
+  275  git push origin issue-3-user-can-start-car
+  276  git status
+  277  cd
+  278  cd ~/repos/ajax-project
+  279  git branch --list
+  280  git issue-5-delete-an-anime
+  281  git branch issue-5-delete-an-anime
+  282  git branch --list
+  283  git switch issue-5-delete-an-anime
+  284  git switch master
+  285  git pull origin master
+  286  git switch issue-5-delete-an-anime
+  287  git status
+  288  git add css/styles.css
+  289  git add index.html
+  290  git add js/data.js
+  291  git add js/main.js
+  292  git commit -m "Currently debugging handleConfirmButton function." --no-verify
+  293  git push origin issue-5-delete-an-anime
+  294  git switch master
+  295  git switch issue-5-delete-an-anime
+  296  git switch master
+  297  cd
+  298  cd ~/repos/driving-game
+  299  git status
+  300  git add main.js
+  301  git add styles.css
+  302  git commit -m "Completed issue-3-user-can-start-car."
+  303  cd ~/repos/driving-game
+  304  git status
+  305  git commit -m "Completed issue-3-user-can-start-car." --no-verify
+  306  git push origin issue-3-user-can-start-car
+  307  git switch master
+  308  git pull origin master
+  309  git branch --list
+  310  git branch issue-4-user-can-stop-car
+  311  git branch --list
+  312  git switch issue-4-user-can-stop-car
+  313  git branch --list
+  314  git status
+  315  git add data.js
+  316  git add main.js
+  317  git commit -m "Completed issue-4-user-can-stop-car." --no-verify
+  318  git push origin issue-4-user-can-stop-car
+  319  git switch master
+  320  git pull origin master
+  321  git branch --list
+  322  git branch issue-5-user-can-steer-car
+  323  git switch issue-5-user-can-steer-car
+  324  git status
+  325  clear
+  326  cd ~/repos/ajax-project
+  327  git branch --list
+  328  git branch issue-5-delete-an-anime
+  329  git switch issue-5-delete-an-anime
+  330  git status
+  331  git add css/styles.css
+  332  git add index.html
+  333  git add js/main.js
+  334  git commit -m "Changed confirm delete modal css styling."
+  335  git push origin issue-5-delete-an-anime
+  336  git status
+  337  cd
+  338  cd ~/repos/c1121-code-solutions
+  339  git pull origin master
+  340  cd ~/repos/ajax-project
+  341  git status
+  342  git add css/styles.css
+  343  git add js/main.js
+  344  git commit -m "Completed issue-5-delete-an-anime."
+  345  git push origin issue-5-delete-an-anime
+  346  git stash
+  347  git status
+  348  git add css/styles.css
+  349  git add index.html
+  350  git add js/main.js
+  351  git commit -m "Completed issue-5-delete-an-anime."
+  352  git push origin issue-5-delete-an-anime
+  353  git switch master
+  354  git pull origin master
+  355  cd ~/repos
+  356  git clone git@github.com:lyn-kim/week-planner.git
+  357  cd week-planner
+  358  git add .
+  359  git commit -m 
+  360  git commit -m "Landing page and event listener for add entry button." --no-verify
+  361  git push origin master
+  362  git pull origin master
+  363  git add .
+  364  git commit -m "add entry modal update + css" --no-verify
+  365  git push origin master
+  366  git pull origin master
+  367  git add .
+  368  git commit -m "Changed html and css." --no-verify
+  369  git push origin master
+  370  git pull origin master
+  371  git status
+  372  git add .
+  373  git commit -m "thanks cody" --no-verify
+  374  git push origin master
+  375  git pull origin master
+  376  pwd
+  377  ~/repos/pokemon-dapp-master
+  378  cd ~/repos/pokemon-dapp-master
+  379  npm install
+  380  cd
+  381  cd ~/repos/driving-game
+  382  git status
+  383  git add data.js
+  384  git add index.html
+  385  git add main.js
+  386  git add styles.css
+  387  git add track.png
+  388  git add images/track.png
+  389  git add images/yoshi.png
+  390  git commit -m "Completed issue-5-user-can-steer-car."
+  391  git push origin issue-5-user-can-steer-car
+  392  git commit
+  393  cd ~/repos/c1121-code-solutions
+  394  git status
+  395  git pull origin master
+  396  git branch --list
+  397  cd ~/repos/c1121-code-solutions
+  398  git switch master
+  399  git pull origin master
+  400  cd ~/repos/c1121-code-solutions
+  401  git pull origin master
+  402  git branch es6-destructuring
+  403  git switch es6-destructuring
+  404  git status
+  405  git add es6-destructuring
+  406  git commit -m "Completed es6-destructuring exercise."
+  407  git push origin es6-destructuring
+  408  cd ~/repos/c1121-code-solutions
+  409  git switch master
+  410  git branch es6-arrow-functions
+  411  git switch es6-arrow-functions
+  412  git status
+  413  git add es6-arrow-functions
+  414  git commit -m "Completed es6-arrow-functions exercise."
+  415  git push origin es6-arrow-functions
+  416  git switch master
+  417  git pull origin master
+  418  git branch command-line-basics
+  419  git switch command-line-basics
+  420  git switch master
+  421  git pull origin master
+  422  git switch command-line-basics
+  423  git status
+  424  cd command-line-basics
+  425  git switch master
+  426  cd command-line-basics
+  427  git switch command-line-basics
+  428  pwd
+  429  man man
+  430  man cat
+  431  cat laziness.txt
+  432  man cat
+  433  cat 
+  434  cd ~/repos/c1121-code-solutions
+  435  cat laziness.tct
+  436  clear
+  437  cat laziness.txt
+  438  pwd
+  439  cat command-line-basics/laziness.txt
+  440  cat command-line-basics/impatience.txt
+  441  cat command-line-basics/hubris.txt
+  442  cat command-line-basics/laziness.txt command-line-basics/impatience command-line-basics/hubris.txt
+  443  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  444  cat command-line-basics/laziness.txt command-line-basics/impatience command-line-basics/hubris.txt > three-virtues.txt
+  445  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  446  cat command-line-basics/laziness.txt command-line-basics/impatience command-line-basics/hubris.txt > three-virtues.txt
+  447  cat command-line-basics/laziness.txt command-line-basics/impatience.txt command-line-basics/hubris.txt
+  448  cat command-line-basics/laziness.txt command-line-basics/impatience.txt command-line-basics/hubris.txt > three-virtues.txt
+  449  cat command-line-basics/laziness.txt command-line-basics/impatience.txt command-line-basics/hubris.txt > command-line-basics/three-virtues.txt
+  450  cd command-line-basics
+  451  clear
+  452  cat laziness.txt
+  453  cat impatience.txt
+  454  cat hubris.txt
+  455  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  456  cat three-virtues.txt
+  457  man ls
+  458  ls lfz-staff/
+  459  ls -a lfz-staff/
+  460  ls -F lfz-staff/
+  461  ls -aF lfz-staff > lfz-staff/contents.txt
+  462  cat lfz-staff/contents.txt
+  463  clear
+  464  man pwd
+  465  pwd > i-was-here.txt
+  466  man pwd
+  467  pwd command-line-basics
+  468  ls command-line-basics
+  469  ls --command-line-basics
+  470  clear
+  471  ls
+  472  cat i-was-here.txt
+  473  clear
+  474  man echo
+  475  echo Hello, World!
+  476  echo 'Hello, World!'
+  477  echo 'Hello, World!' > hello.txt
+  478  ls
+  479  cat hello.txt
+  480  clear
+  481  man touch
+  482  touch tag-youre-it.txt
+  483  touch snoot/boop.txt
+  484  ls
+  485  ls snoot/
+  486  clear
+  487  man mkdir
+  488  mkdir parent
+  489  ls parent/
+  490  ls
+  491  mkdir -p parent/child
+  492  ls
+  493  ls parent/
+  494  mkdir -p parent/child/grandchild
+  495  ls
+  496  ls parent/
+  497  ls child/
+  498  ls parent/child/
+  499  touch parent/child/grandchild .gitkeep
+  500  ls -a
+  501  ls -a parent
+  502  ls -a child
+  503  ls child
+  504  ls parent/child/grandchild
+  505  ls -a parent/child/grandchild
+  506  touch parent/child/grandchild/.gitkeep
+  507  ls -a
+  508  ls -a parent/child/grandchild
+  509  clear
+  510  ls -a parent/child/grandchild
+  511  man mv
+  512  clear
+  513  mv pokiemans -t pokemon
+  514  man mv
+  515  clear
+  516  mv pokemon -t pokiemans
+  517  clear
+  518  mv pokiemans pokemon
+  519  ls
+  520  man rm
+  521  git status
+  522  git add ./
+  523  git status
+  524  git commit -m "Backing up all files."
+  525  git push origin command-line-basics
+  526  git status
+  527  clear
+  528  man rm
+  529  clear
+  530  rm lol.txt
+  531  ls
+  532  rm -r kill-me/
+  533  ls
+  534  git status
+  535  git add kill-me/kill-me-now.png
+  536  git add lol.txt
+  537  git add kill-me
+  538  git add kill-me/
+  539  git status
+  540  git commit -m "Removed tw // death mention kill-me/ and lol.txt."
+  541  git push origin command-line-basics
+  542  clear
+  543  man cp
+  544  cp and-then.txt no-and-then.txt
+  545  ls
+  546  cat and-then.txt
+  547  cat no-and-then.txt
+  548  clear
+  549  man history
+  550  $ history
+  551  clear
+  552  history
+  553  history > command-history.txt
