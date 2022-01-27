@@ -57,13 +57,14 @@ app.post('/api/notes', (req, res) => {
 
     const transferData = JSON.stringify(data, null, 2);
 
+    data.nextId++;
+
     fs.writeFile('./data.json', transferData, err => {
       if (err) {
         res.status(500).json({ error: errorMessage.unexpected });
 
       } else {
         res.status(201).json(newData);
-        data.nextId++;
       }
     });
   }
