@@ -1,0 +1,35 @@
+button {
+  border: 3px solid black;
+  filter: drop-shadow(3px 3px #000);
+  padding: 4px 15px;
+}
+
+.royal-purple {
+  background-color: #351e75;
+  color: white;
+}
+
+.purple-marguerite {
+  background-color: #674ea7;
+  color: white;
+}
+
+.pale-salmon {
+  background-color: #e06666;
+  color: white;
+}
+
+.rajah {
+  background-color: #f6b26b;
+  color: black;
+}
+
+.yellow {
+  background-color: #fef851;
+  color: black;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
