@@ -1,0 +1,33 @@
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.row {
+  display: flex;
+}
+
+.toggle-black {
+  color: black;
+  border-color: black;
+  font-size: 100px;
+  padding: 1rem;
+}
+
+.toggle-green {
+  color: #6aa84f;
+  border-color: black;
+  font-size: 100px;
+  padding: 1rem;
+}
