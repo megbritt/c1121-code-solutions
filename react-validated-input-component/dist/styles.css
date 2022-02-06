@@ -1,0 +1,26 @@
+p {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 12px;
+  margin: 0.5rem 0;
+}
+
+.check {
+  color: #6BA84F;
+}
+
+.cross {
+  color: #CF2A28;
+}
+
+.icon {
+  font-size: 12px;
+  padding: 0.5rem;
+}
+
+.red {
+  color: #CF2A28;
+}
+
+.success {
+  color: #6BA84F;
+}
