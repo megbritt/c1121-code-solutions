@@ -1,0 +1,33 @@
+* {
+  background-color: black;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.accordion {
+  width: 450px;
+}
+
+.details {
+  border: 5px dashed rgb(95, 6, 6);
+  color:rgb(128, 129, 46);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0.2rem;
+  padding: 1rem;
+}
+
+.subject {
+  background-color: rgb(95, 6, 6);
+  border: 2px solid black;
+  color: rgb(176, 179, 6);
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.2rem;
+  padding: 0.4rem;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
