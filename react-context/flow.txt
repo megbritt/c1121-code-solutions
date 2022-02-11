@@ -1,0 +1,36 @@
+User can sign up.
+
+• when user clicks sign up or register now, the browser renders a sign-up form
+• as a controlled component, the app state is updated with the user-inputted values when the user inputs username and password
+• on submission, a fetch POST request is made with the path '/api/auth/sign-up', passing in the user-inputted username and password values from the app state as a serialized object
+• on a successful request, argon2 will hash the password before it's inputted into the database
+• the username and its associated hashed password are now accessible in the postgresql database
+• the browser redirects to the sign-in form
+
+=======================================================================================================================================
+
+User can sign in.
+
+• as a controlled component, when the user inputs their username and password, the app state is updated with the user-inputted values
+• on submission, a fetch POST request is made with the path '/api/auth/sign-in', passing in the user-inputted username and password values from the app state as a serialized object
+• on a successful request, the server will send a query request to the database to try to access the given username
+• if the username exists in the database, argon2 will decode and verify that the stored hashed password is the same as the inputted password
+• if the passwords match, then an access token containing the user's credentials will be created via the jwt object
+• the return of the generated token fulfills the promise from the client side; the app state is updated with the user object and the access token is added to local storage
+•  the browser redirects to the home page
+
+
+=======================================================================================================================================
+
+User can stay signed in (even if they refresh the page).
+
+• logged-in users keep an access token in their local storage, providing the credentials for the user to access authenticated pages without having to re-enter their username/password
+• when the user is accessing different pages, componentDidMount() triggers and checks the local storage for a token, allowing the app state to update with the returned user object if the access token is valid
+
+
+=======================================================================================================================================
+
+User can sign out.
+
+• if user clicks on button 'Sign out', then the web token granting access will be removed from local storage
+• the browser redirects to the home page
