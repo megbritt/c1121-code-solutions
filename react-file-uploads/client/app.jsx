@@ -63,7 +63,7 @@ export default class App extends React.Component {
         this.setState({ caption: '' })
         this.fileInputRef.current.value = null;
       })
-      .catch(err => next(err))
+      .catch(err => console.error(err));
   }
 
   render() {
