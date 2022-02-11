@@ -18,6 +18,19 @@ function authorizationMiddleware(req, res, next) {
     * https://nodejs.org/api/http.html#http_message_headers
     * https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback
     */
+
+  const token = req.get('X-Access-Token')
+
+  if (!token) {
+    throw new ClientError(401, 'authentication required');
+  }
+
+  const payload = jwt.verify(token, process.env.TOKEN_SECRET);
+
+  req.user = payload;
+
+  next();
+
 }
 
 module.exports = authorizationMiddleware;
