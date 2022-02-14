@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      var makeCounter = function()
+      {
+        var privateCounter = 0;
+        function changeBy(val)
+        {
+          privateCounter+=val;
+        }
+        return {
+          increment: function (){changeBy(1)},
+          decrement: function(){changeBy(-1)},
+          value: function () {return privateCounter;}
+        }
+      }
+      let change1 = makeCounter();
+      console.log(change1.value());
+      change1.decrement();
+      change1.increment();
+      change1.increment();
+      change1.increment();
+      change1.increment();
+      console.log(change1.value());
+      change1.decrement();
+      console.log(change1.value());
+  </script>
+</body>
+</html>
